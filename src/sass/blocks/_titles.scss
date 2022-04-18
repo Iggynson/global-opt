@@ -1,0 +1,36 @@
+.title {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    &_white {
+        color: #ffffff;
+    }
+    &_fz72px {
+        margin-top: 8px;
+        font-family: 'RobotoCondensed', sans-serif; 
+        font-size: 72px;
+        color: #ec644b;
+        text-align: center;
+    }
+    &_fz42px {
+        margin-top: 3px;
+        font-family: 'RobotoCondensed', sans-serif; 
+        font-size: 42px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+    }
+    &_fz28xp {
+        font-size: 28px;
+        font-weight: 400;
+        color: #3a3a3a;
+    }
+    &_fz24px {
+        margin-top: 6px;
+        font-size: 24px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+    }
+}

@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    &__list {
+        display: flex;
+        list-style-type: none; 
+        padding: 0;
+        margin-top: 32px;
+    }
+    &__item {
+        padding: 0 15px;
+        border-right: 1px rgba($color: #000000, $alpha: .4) dotted; 
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+    &__link {
+        position: relative;
+        font-size: 15px;
+        font-weight: 400;
+        color: #ffffff;
+        transition: all 0.6s;
+        &:hover {
+            @include link_hover; 
+            &::after  {
+                content: '';
+                position: absolute; 
+                bottom: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 1px;
+                background-color: $main_color;
+                transition: width 2s;
+            }
+        }
+    }
+    &__close {
+        display: none;
+    }
+    &__contact {
+        margin-top: 25px;
+    }
+    &__questions {
+        font-size: 14px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: right;
+    }
+    &__phone {
+        font-size: 19px;
+        font-weight: 700;
+        color: #ffffff;
+        &:hover {
+            @include link_hover;
+        }
+    }
+    &__btn {
+        margin-top: 21px;
+    }
+}
+.hamburger {
+    display: none;
+}

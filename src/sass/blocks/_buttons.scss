@@ -1,0 +1,24 @@
+.button {
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+    height: 57px;
+    border-radius: 40px;
+    background: $main_color;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: .6s all;
+    &:hover {
+        background-color: $main_color_bg-hover;
+    }
+    &_mini {
+        width: 160px;
+        height: 45px;
+    }
+    &_medium {
+        width: 180px;
+        height: 45px;
+    }
+}
